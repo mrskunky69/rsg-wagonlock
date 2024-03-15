@@ -1,6 +1,19 @@
 
 local RSGCore = exports['rsg-core']:GetCoreObject()
 
+-- animation
+function CrouchAnim()
+    local dict = "script_mp@player@unlockdoor"
+    RequestAnimDict(dict)
+    while not HasAnimDictLoaded(dict) do
+        Wait(10)
+    end
+    local ped = PlayerPedId()
+    local coords = GetEntityCoords(ped)
+    TaskPlayAnim(ped, dict, "unlockdoorl_male", 0.2, 4.0, -1, 1, 0, false, false, false)
+end
+
+
 -- Command to lock the car of the player for everyone.
 RegisterCommand("lockwagon", function()
     local playerPed = PlayerPedId() -- Get the player ped
