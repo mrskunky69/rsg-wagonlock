@@ -4,3 +4,8 @@ shared items
 
 
 ['oldrag']      = {['name'] = 'oldrag',      ['label'] = 'oldrag',      ['weight'] = 1,['type'] = 'item', ['image'] = 'oldrag.png',      ['unique'] = true,  ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'oldrag!'},
+
+
+
+
+----use oldrag to wash wagon -----
